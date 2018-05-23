@@ -10,22 +10,22 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            ///Part one greetings statement
-             string messageOne = "Hello World!";
-             string messageTwo = "I am Spartacus";
+            /////Part one greetings statement
+            // string messageOne = "Hello World!";
+            // string messageTwo = "I am Spartacus";
 
-             //Part two set intitial Spartacus attributes
-             int ageOne = 35;
-             int ageTwo = 45;
-             int ageThree = 80;
-             double heightOne = 72.50;
-             double heightTwo = 91.45;
-             float weightOne = 210.0284606f;
-             float weightTwo = 331.12345678f;
-             bool isGodLikeOne = true;
-             bool isGodLikeTwo = false;
-             char genderMale = 'M';
-             char genderFemale = 'F';
+            // //Part two set intitial Spartacus attributes
+            // int ageOne = 35;
+            // int ageTwo = 45;
+            // int ageThree = 80;
+            // double heightOne = 72.50;
+            // double heightTwo = 91.45;
+            // float weightOne = 210.0284606f;
+            // float weightTwo = 331.12345678f;
+            // bool isGodLikeOne = true;
+            // bool isGodLikeTwo = false;
+            // char genderMale = 'M';
+            // char genderFemale = 'F';
 
             /*//Part three display variable values
             Console.WriteLine(messageOne);//Displays intitial greeting to console
@@ -84,18 +84,18 @@ namespace HelloWorld
             //Console.WriteLine("The length of messageTwo is " + messTwoLength);
 
             //Part 11: Conditional examples
-                        string cityOne = "Vesuvius";
-            string cityTwo = "Nola";
-            string cityThree = "Nuceria";
-            int cityOneDistance, cityTwoDistance, cityThreeDistance;
+            //            string cityOne = "Vesuvius";
+            //string cityTwo = "Nola";
+            //string cityThree = "Nuceria";
+            //int cityOneDistance, cityTwoDistance, cityThreeDistance;
 
-            //Solicit user input
-                                    Console.WriteLine("What is the distance to {0}?", cityOne);
-            cityOneDistance = int.Parse(Console.ReadLine());
-            Console.WriteLine("What is the distance to " + cityTwo + "?");
-            cityTwoDistance = int.Parse(Console.ReadLine());
-            Console.WriteLine("What is the distance to Nuceria?");
-            cityThreeDistance = int.Parse(Console.ReadLine());
+            ////Solicit user input
+            //                        Console.WriteLine("What is the distance to {0}?", cityOne);
+            //cityOneDistance = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What is the distance to " + cityTwo + "?");
+            //cityTwoDistance = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What is the distance to Nuceria?");
+            //cityThreeDistance = int.Parse(Console.ReadLine());
 
             //if ((cityOneDistance <= 125) && ((cityOneDistance < cityTwoDistance) && (cityOneDistance < cityThreeDistance)))
             //{
@@ -158,78 +158,96 @@ namespace HelloWorld
 
             //}
 
-            //string[] foodList = new string[5];
-            //foodList[0] = "Milk";
-            //Console.WriteLine(foodList[0]);
+            //Part 12, Arrays
+            
+                string[] foodList = new string[5];
+                foodList[0] = "Milk";
+                Console.WriteLine(foodList[0]);
 
-            //foodList[0] = "Milk";
-            //foodList[1] = "Fruit";
-            //foodList[2] = "Meat";
-            //foodList[3] = "Wine";
-            //foodList[4] = "Bread";
-            //Console.WriteLine("{3}, {1}, {2}, {0}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+                foodList[0] = "Milk";
+                foodList[1] = "Fruit";
+                foodList[2] = "Meat";
+                foodList[3] = "Wine";
+                foodList[4] = "Bread";
+                Console.WriteLine("{3}, {1}, {2}, {0}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
 
-            //int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 1500 };
-            //Console.WriteLine(foodAmount[0] + ", " + foodAmount[1] + ", " +
-            //    foodAmount[2] + ", " + foodAmount[3] + ", " + foodAmount[4]);
+               int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 1500 };
+            //    Console.WriteLine(foodAmount[0] + ", " + foodAmount[1] + ", " +
+            //        foodAmount[2] + ", " + foodAmount[3] + ", " + foodAmount[4]);
 
-            //Console.WriteLine(foodList.Length);
+            //    Console.WriteLine(foodList.Length);
 
-            //string[] elements = messageTwo.Split(' ');
-            //Console.WriteLine(elements[0]); // prints "I"
-            //Console.WriteLine(elements[1]); // prints "am"
-            //Console.WriteLine(elements[2]); // prints "Spartacus"
+            //    string[] elements = messageTwo.Split(' ');
+            //    Console.WriteLine(elements[0]); // prints "I"
+            //    Console.WriteLine(elements[1]); // prints "am"
+            //    Console.WriteLine(elements[2]); // prints "Spartacus"
 
-            //List<string> foodList = new List<string>();
-            //foodList.Add("Milk");
-            //foodList.Add("Fruit");
-            //foodList.Add("Meat");
-            //foodList.Add("Wine");
-            //foodList.Add("Bread");
+            //    List<string> foodList = new List<string>();
+            //    foodList.Add("Milk");
+            //    foodList.Add("Fruit");
+            //    foodList.Add("Meat");
+            //    foodList.Add("Wine");
+            //    foodList.Add("Bread");
 
-            //foodList.Add("Pepsi");
-            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4], foodList[5]);
-            //foodList.Remove("Pepsi");
-            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
-            //foodList.Insert(1, "Pepsi");
-            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4], foodList[5]);
-            //foodList.RemoveAt(1);
-            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+            //    foodList.Add("Pepsi");
+            //    Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4], foodList[5]);
+            //    foodList.Remove("Pepsi");
+            //    Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+            //    foodList.Insert(1, "Pepsi");
+            //    Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4], foodList[5]);
+            //    foodList.RemoveAt(1);
+            //    Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
 
-            // Part thirteen while loop example
-            string action = " ";
-            while (action != "exit")
-            {
-                Console.WriteLine("What is your rank soldier?");
-                string rank = Console.ReadLine();
+            //    Part thirteen while loop example
+            //string action = " ";
+            //    while (action != "exit")
 
-                Console.WriteLine("What is your age soldier?");
-                int age = int.Parse(Console.ReadLine());
-                Console.WriteLine("What is your job soldier?");
-                string job = Console.ReadLine();
 
-                if ((rank == "officer") || (age <= 26))
+
+                    //Part 14, for-loop examples
+                    //for (int i = 0; i < foodAmount.Lenth; i++)
+                    //{
+                    //    Console.WriteLine(i);
+                    //}
+
+                for (int i = 0; i < foodAmount.Length; i++)
                 {
-                    Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+                    Console.WriteLine("Enter a value for " + foodList[i]);
+                    foodAmount[i] = int.Parse(Console.ReadLine());
                 }
-                else if ((job == "cook") || (age >= 26))
-                {
-                    Console.WriteLine("My army has to eat. Pack your pots and pans");
-                }
-                else
-                {
-                    Console.WriteLine("Sorry, you are staying home.");
-                }
-                Console.WriteLine("Add another? Type exit to quit");
-                action = Console.ReadLine();
-            }
+            
 
+
+            //    Console.WriteLine("What is your rank soldier?");
+            //    string rank = Console.ReadLine();
+
+            //    Console.WriteLine("What is your age soldier?");
+            //    int age = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("What is your job soldier?");
+            //    string job = Console.ReadLine();
+
+            //    if ((rank == "officer") || (age <= 26))
+            //    {
+            //        Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+            //    }
+            //    else if ((job == "cook") || (age >= 26))
+            //    {
+            //        Console.WriteLine("My army has to eat. Pack your pots and pans");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sorry, you are staying home.");
+            //    }
+            //    Console.WriteLine("Add another? Type exit to quit");
+            //    action = Console.ReadLine();
+            //}
 
             
 
 
 
-        }//Main Method Closing Curly Brace
+
+            }//Main Method Closing Curly Brace
     }//Class Closing Curly Brace
 }//Namespace Closing Curly Brace
 
